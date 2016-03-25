@@ -1,0 +1,21 @@
+//
+//  SevLight_Prefix.pch
+//  SevLight
+//
+//  Created by Yaroslav Bulda on 05/12/15.
+//  Copyright © 2015 torip3ng. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Macroses.h"
+#import "UIGeometryAdditions.h"
+//#import "UIView+Frame.h"
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <libextobjc/extobjc.h>
+
+#endif

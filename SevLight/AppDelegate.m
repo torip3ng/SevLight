@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "SVLMapViewController.h"
+
+@import GoogleMaps;
 
 @interface AppDelegate ()
 
@@ -16,7 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [GMSServices provideAPIKey:@"AIzaSyAw5cX8lbdfKoIVLbA9j9H8umwa4Od2fOo"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = [SVLMapViewController viewControllerInNavigation];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
